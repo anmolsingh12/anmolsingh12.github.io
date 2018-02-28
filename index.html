@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Index Page</title><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <meta http-equiv="refresh" content="1;URL='landing.html'" />
+</head>
+  <body">
+
+    <div id="profile-button">
+        <img src="img/profile-pic.jpg">
+        </img>
+      </div>
+  
+  		<div class="container" id="index-page">
+  			<div class="row">
+  				<div class="col-sm-4" id=col>
+  					<h2>About</h2>
+  					<div class="round"><i class="far fa-user" style="font-size:56px"></i></div>
+  				</div>
+
+  				<div class="col-sm-4" id=col>
+  					<h2>Skills</h2>
+  					<div class="round"><i class="far fa-user"></i></div>
+  				</div>
+
+  				<div class="col-sm-4" id=col>
+  					<h2>Projects</h2>
+  					<div class="round"><i class="far fa-user"></i></div>
+  				</div>
+  			</div>
+
+  			<div class="row">
+  				<div class="col-sm-4" id=col>
+  					<h2>Education</h2>
+  					</div>
+
+  				<div class="col-sm-4" id=col>
+  					<h2>Resume</h2>
+  					<div class="round"><i class="far fa-user"></i></div>
+  				</div>
+
+  				<div class="col-sm-4" id=col>
+  					<h2>Contact Me</h2>
+  					<div class="round"><i class="far fa-user"></i></div>
+  				</div>
+  			</div>
+  		</div>
+      
+        <script>
+          $('#profile-button').click(function(){
+        $('#profile-button').fadeOut("slow",function(){
+          $("#index-page").fadeIn();
+          TweenMax.from("#index-page", .4, { scale: 0, ease:Sine.easeInOut});
+          TweenMax.to("#index-page", .4, { scale: 1, ease:Sine.easeInOut});
+        });
+      });
+
+    </script>
+    </div>
+  </body>
+  </html>
